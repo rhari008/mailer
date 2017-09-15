@@ -1,0 +1,9 @@
+Name=Session
+Type=MAIL
+mail.transport.protocol=smtp
+mail.smtp.host=10.78.132.146
+mail.smtp.auth=true
+mail.smtp.starttls.enable=true
+mail.smtp.port=587
+mail.user=me1
+mail.password=me1
