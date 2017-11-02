@@ -21,24 +21,7 @@
         </license>
     </licenses>
 
-    <properties>
-        <!-- Properties for the mail server/account that are required for the cloud integration tests must be provided -->
-        <!-- as Maven properties, e.g.: -->
-        <!-- mvn verify -P cloud-integration-tests -Dmail.host=... -Dmail.user=... -Dmail.password=... -Dmail.from.address=... -Dmail.to.address=... -->
-        <!-- Hint: To avoid retyping the above whenever you call Maven, you can of course add the properties directly, e.g.: -->
-        <!-- <mail.user>p0123456789</mail.user> -->
-        <!-- Hint: You may like to use environment variables and set the properties based on their values, e.g.: -->
-        <!-- <mail.password>${env.MAIL_PASSWORD}</mail.password> -->
 
-        <!-- Properties that hold mail server configuration are pre-defined below with sensible defaults -->
-        <mail.port>587</mail.port>
-        <mail.starttls>true</mail.starttls>
-        <mail.host>10.78.132.146</mail.host>
-        <mail.user>me1</mail.user>
-        <mail.password>me1</mail.password>
-        <mail.from.address>root@sappm.local</mail.from.address>
-        <mail.to.address>Hariprasauth.R@sap.com</mail.to.address>
-    </properties>
 
     <build>
         <plugins>
@@ -109,4 +92,22 @@
             </build>
         </profile>
     </profiles>
+        <properties>
+        <!-- Properties for the mail server/account that are required for the cloud integration tests must be provided -->
+        <!-- as Maven properties, e.g.: -->
+        <!-- mvn verify -P cloud-integration-tests -Dmail.host=... -Dmail.user=... -Dmail.password=... -Dmail.from.address=... -Dmail.to.address=... -->
+        <!-- Hint: To avoid retyping the above whenever you call Maven, you can of course add the properties directly, e.g.: -->
+        <!-- <mail.user>p0123456789</mail.user> -->
+        <!-- Hint: You may like to use environment variables and set the properties based on their values, e.g.: -->
+        <!-- <mail.password>${env.MAIL_PASSWORD}</mail.password> -->
+
+        <!-- Properties that hold mail server configuration are pre-defined below with sensible defaults -->
+        <mail.port>587</mail.port>
+        <mail.starttls>true</mail.starttls>
+        <mail.host>10.78.134.169</mail.host>
+        <mail.user>me1</mail.user>
+        <mail.password>me1</mail.password>
+        <mail.from.address>root@sappm.local</mail.from.address>
+        <mail.to.address>Hariprasauth.R@sap.com</mail.to.address>
+    </properties>
 </project>
